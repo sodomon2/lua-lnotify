@@ -1,6 +1,6 @@
 ## LNotify: Lua bindings for Libnotify
 
-__NOTE__: this project is based the [lnotify](https://github.com/gabrield/lnotify)
+> NOTE: this project is based the [lnotify](https://github.com/gabrield/lnotify)
 
 Lnotify is a Lua binding library for [LibNotify](https://gitlab.gnome.org/GNOME/libnotify).
 
