@@ -2,8 +2,7 @@
 
 Lnotify is a Lua binding library for [LibNotify](https://gitlab.gnome.org/GNOME/libnotify).
 
-To build lnotify you need to have Lua (>=5.1) and gtk (>=3.0).
-
+To build lnotify you need to have Lua (>=5.1), Gtk (>=3.0), and LibNotify.
 
 #### Getting and installing
 
