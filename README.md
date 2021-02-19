@@ -1,4 +1,6 @@
-## Lnotify: Lua bindings for Libnotify
+## LNotify: Lua bindings for Libnotify
+
+__NOTE__: this project is based the [lnotify](https://github.com/gabrield/lnotify)
 
 Lnotify is a Lua binding library for [LibNotify](https://gitlab.gnome.org/GNOME/libnotify).
 
@@ -8,8 +10,8 @@ To build lnotify you need to have Lua (>=5.1), Gtk (>=3.0), and LibNotify.
 
 
 ```sh
-$ git clone https://github.com/sodomon2/lnotify
-$ cd lnotify
+$ git clone https://github.com/sodomon2/lua-lnotify
+$ cd lua-lnotify
 $ make
 $ make install # or 'sudo make install'
 ```
