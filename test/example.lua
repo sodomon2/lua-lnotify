@@ -6,7 +6,7 @@ Simple script binding libnotify to Lua, quite easy ;)
 It is still simple and there is no much resources, but usable.
 --]]
 
-require("notify")
+notify = require("notify")
 
 -- sleep(n) ->  little trick
 function sleep(length)

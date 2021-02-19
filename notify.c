@@ -158,7 +158,7 @@ luaopen_notify (lua_State * L)
     {NULL, NULL},
   };
 
-#if LUA_VERSION_NUM == 502
+#if LUA_VERSION_NUM >= 502
   luaL_newlib(L, driver);
 #else
   luaL_register(L, "notify", driver);
