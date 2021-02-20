@@ -7,7 +7,7 @@ It is still simple and there is no much resources, but usable.
 --]]
 
 PWD = os.getenv("PWD")
-notify = require("notify")
+notify = require("moonnotify")
 
 
 -- sleep(n) ->  little trick

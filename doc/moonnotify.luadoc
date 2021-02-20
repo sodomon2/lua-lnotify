@@ -3,7 +3,7 @@
 -- Use <code>new</code> to create a new notification.<br/>
 -- Example:<br/><br/>
 -- <code>
--- notify = require("notify")<br/>
+-- notify = require("moonnotify")<br/>
 -- <br/>
 -- hello = notify.new("Hello World!", "from lua :)")<br/>
 -- notify.set_urgency(hello, 1)<br/>
@@ -19,16 +19,16 @@ module "notify"
 -- The <code>title</code> field is required.
 --
 -- @return Returns a new <code>notify</code> object.
-function notify.new(title, subtitle, icon)
+function new(title, subtitle, icon)
 end
 
 --- Set a urgency to the notification
 -- @param notify string.
 -- @param urgency number.
-function notify.set_urgency(notify, urgency)
+function set_urgency(notify, urgency)
 end
 
 --- Show the notification.
 -- @param notify notify is a <code>notify<code> object
-function notify.show(notify)
+function show(notify)
 end

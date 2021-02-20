@@ -10,21 +10,21 @@ CFLAGS      = -O2 $(WARN) $(LUA_INCLUDE) `pkg-config --cflags --libs gtk+-3.0 lu
 CXXFLAGS    = -O2 $(WARN) $(LUA_INCLUDE)
 CC          = gcc
 
-all: notify.so
+all: moonnotify.so
 
 doc: 
-	$(LDOC) doc/lnotify.luadoc
+	$(LDOC) doc/moonnotify.luadoc
 
-notify.so: notify.o
-	$(CC) -o $@ -shared notify.o $(CFLAGS)
+moonnotify.so: moonnotify.o
+	$(CC) -o $@ -shared moonnotify.o $(CFLAGS)
 
 clean:
-	rm -f notify.so *.o doc/*.html doc/*.css
+	rm -f moonnotify.so *.o doc/*.html doc/*.css
   
 install:
-	install -m 755 notify.so $(DESTDIR)$(LIBDIR)/notify.so
+	install -m 755 moonnotify.so $(DESTDIR)$(LIBDIR)/moonnotify.so
 
 uninstall:
-	rm -f $(DESTDIR)$(LIBDIR)/notify.so
+	rm -f $(DESTDIR)$(LIBDIR)/moonnotify.so
   
-.PHONY: notify doc
+.PHONY: moonnotify doc

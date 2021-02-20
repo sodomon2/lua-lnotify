@@ -2,6 +2,7 @@
 ===============================================================================
 
 Copyright (C) 2010-2011 Gabriel Duarte (gabrield@devio.us)
+Copyright (C) 2021 Díaz Urbaneja Víctor Diego Alejandro (sodomon2@gmail.com)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -35,7 +36,7 @@ THE SOFTWARE.
 
 #define VERSION 0.5
 
-int LUA_API luaopen_notify (lua_State *);
+int LUA_API luaopen_moonnotify (lua_State *);
 
 static int
 newnotify (lua_State * L)
@@ -148,7 +149,7 @@ set_urgency (lua_State * L)
 }
 
 int LUA_API
-luaopen_notify (lua_State * L)
+luaopen_moonnotify (lua_State * L)
 {
   const luaL_Reg driver[] = {
     {"show", show},
