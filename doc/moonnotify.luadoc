@@ -1,4 +1,4 @@
---- LNotify is a lua bindings for libnotify.
+--- MoonNotify is a lua bindings for libnotify.
 --
 -- Use <code>new</code> to create a new notification.<br/>
 -- Example:<br/><br/>
