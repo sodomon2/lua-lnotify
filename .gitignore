@@ -1,0 +1,4 @@
+moonnotify.so
+moonnotify.o
+doc/*.html
+doc/*.css
