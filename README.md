@@ -2,7 +2,7 @@
 
 MoonNotify is a Lua binding library for [LibNotify](https://gitlab.gnome.org/GNOME/libnotify).
 
-To build lnotify you need to have Lua (>=5.1), Gtk (>=3.0), and LibNotify.
+To build MoonNotify you need to have Lua (>=5.1), Gtk (>=3.0), and LibNotify.
 
 #### Getting and installing
 
@@ -36,6 +36,6 @@ Other examples can be found in the **examples/** directory contained in the rele
 
 #### Documentation
 -------------
-Documentation can be generated automatically by passing lnotify.luadoc (in doc/) to [LuaDoc](https://github.com/lunarmodules/LDoc), or can be viewed [online.](http://sodomon.gitlab.io/doc/lnotify)
+Documentation can be generated automatically by passing moonnotify.luadoc (in doc/) to [LuaDoc](https://github.com/lunarmodules/LDoc), or can be viewed [online.](https://sodomon.gitlab.io/doc/moonnotify)
 
 > NOTE: this project is based the [lnotify](https://github.com/gabrield/lnotify)
