@@ -10,7 +10,7 @@ CFLAGS      = -O2 $(WARN) $(LUA_INCLUDE) `pkg-config --cflags --libs gtk+-3.0 lu
 CXXFLAGS    = -O2 $(WARN) $(LUA_INCLUDE)
 CC          = gcc
 
-all: notify.so doc
+all: notify.so
 
 doc: 
 	$(LDOC) doc/lnotify.luadoc
