@@ -1,0 +1,34 @@
+--- LNotify is a lua bindings for libnotify.
+--
+-- Use <code>new</code> to create a new notification.<br/>
+-- Example:<br/><br/>
+-- <code>
+-- notify = require("notify")<br/>
+-- <br/>
+-- hello = notify.new("Hello World!", "from lua :)")<br/>
+-- notify.set_urgency(hello, 1)<br/>
+-- notify.show(hello)<br/>
+-- </code>
+
+module "notify"
+
+--- Create a new notification. Use <code>notify.new</code> to initializate notification.
+-- @param title string.
+-- @param subtitle string.
+-- @param icon string.<br/>
+-- The <code>title</code> field is required.
+--
+-- @return Returns a new <code>notify</code> object.
+function notify.new(title, subtitle, icon)
+end
+
+--- Set a urgency to the notification
+-- @param name string.
+-- @param urgency number.
+function notify.set_urgency(name, urgency)
+end
+
+--- Show the notification.
+-- @param notify notify is a <code>notify<code> object
+function notify.show(notify)
+end

@@ -1,3 +1,4 @@
+LDOC        = ldoc
 LUA         = 5.1
 LUA_INCLUDE = -I/usr/include/lua$(LUA)
 
@@ -9,13 +10,16 @@ CFLAGS      = -O2 $(WARN) $(LUA_INCLUDE) `pkg-config --cflags --libs gtk+-3.0 lu
 CXXFLAGS    = -O2 $(WARN) $(LUA_INCLUDE)
 CC          = gcc
 
-all: notify.so
+all: notify.so doc
+
+doc: 
+	$(LDOC) doc/lnotify.luadoc
 
 notify.so: notify.o
 	$(CC) -o $@ -shared notify.o $(CFLAGS)
 
 clean:
-	rm -f notify.so *.o
+	rm -f notify.so *.o doc/*.html doc/*.css
   
 install:
 	install -m 755 notify.so $(DESTDIR)$(LIBDIR)/notify.so
@@ -23,4 +27,4 @@ install:
 uninstall:
 	rm -f $(DESTDIR)$(LIBDIR)/notify.so
   
-.PHONY: notify
+.PHONY: notify doc
