@@ -23,9 +23,9 @@ function notify.new(title, subtitle, icon)
 end
 
 --- Set a urgency to the notification
--- @param name string.
+-- @param notify string.
 -- @param urgency number.
-function notify.set_urgency(name, urgency)
+function notify.set_urgency(notify, urgency)
 end
 
 --- Show the notification.
