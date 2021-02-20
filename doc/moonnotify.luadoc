@@ -10,7 +10,7 @@
 -- notify.show(hello)<br/>
 -- </code>
 
-module "notify"
+module "moonnotify"
 
 --- Create a new notification. Use <code>notify.new</code> to initializate notification.
 -- @param title string.
