@@ -34,4 +34,8 @@ $ lua example.lua
 
 Other examples can be found in the **examples/** directory contained in the release package.
 
+#### Documentation
+-------------
+Documentation can be generated automatically by passing lnotify.luadoc (in doc/) to [LuaDoc](https://github.com/lunarmodules/LDoc), or can be viewed [online.](http://sodomon.gitlab.io/doc/lnotify)
+
 > NOTE: this project is based the [lnotify](https://github.com/gabrield/lnotify)
