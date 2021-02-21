@@ -18,7 +18,7 @@ $ make install # or 'sudo make install'
 
 ```lua
 -- Script: example.lua
-notify = require("notify")
+notify = require("moonnotify")
 
 n1 = notify.new("Hello!", "This is a test :D")
 notify.set_urgency(n1, 1)
@@ -37,5 +37,5 @@ Other examples can be found in the **examples/** directory contained in the rele
 #### Documentation
 -------------
 Documentation can be generated automatically by passing moonnotify.luadoc (in doc/) to [LuaDoc](https://github.com/lunarmodules/LDoc), or can be viewed [online.](https://sodomon.gitlab.io/doc/moonnotify)
-
+    
 > NOTE: this project is based the [lnotify](https://github.com/gabrield/lnotify)
